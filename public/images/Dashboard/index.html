@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- ************google font for poppincs************ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- **************linking the css file************** -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="visitors">
+      <p style="font-weight: 500">Total Visitors in last 30 days</p>
+      <!-- changing number of visitors with precentage -->
+      <div class="dynamic30DaysVisitors">
+        <h2>XXXX</h2>
+        <p>
+          <i class="fa-solid fa-caret-up"></i>
+          <i class="fa-solid fa-caret-down"></i>
+          +0.5%
+        </p>
+      </div>
+    </div>
+    <!-- the main dashboard part where evey chart is there -->
+
+    <main>
+      <section class="leftChoose">
+        <p class="optionsForCharts">Offline Shops</p>
+        <p class="optionsForCharts">Youtube</p>
+        <p class="optionsForCharts">Instagram</p>
+        <p class="optionsForCharts">Facebook</p>
+        <p class="optionsForCharts">Whatsapp</p>
+        <p class="optionsForCharts">Others</p>
+      </section>
+      <section class="rightCharts">
+        <!-- to be done by Subharthi -->
+      </section>
+    </main>
+
+    <section class="revenue">
+      <div>
+        <span>Total Revenue</span>
+        <select id="revenueTimeSelect">
+          <option value="month">This Month</option>
+          <option value="week">This Week</option>
+          <option value="today">Today</option>
+        </select>
+      </div>
+      <div class="revenueMoney">
+        <h3 class="totalRevenue">
+          $5000.00 USD
+          <span class="precentageOfRevenueIncrease"> (-1.37%) </span>
+        </h3>
+      </div>
+    </section>
+
+    <!-- cdn for font -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

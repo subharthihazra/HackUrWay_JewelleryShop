@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- ************google font for poppincs************ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- **************linking the css file************** -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/chart.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="dashleft">
+        <div id="dashtxt">&lt; Dashboard &gt;</div>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button class="" type="submit" >Logout</button>
+        </form>
+      </div>
+        <div class="visitors">
+        <p style="font-weight: 500">Total Visitors in last 30 days</p>
+        <!-- changing number of visitors with precentage -->
+        <div class="dynamic30DaysVisitors">
+            <h2>XXXX</h2>
+            <p>
+            <i class="fa-solid fa-caret-up"></i>
+            <i class="fa-solid fa-caret-down"></i>
+            +0.5%
+            </p>
+        </div>
+        </div>
+    </div>
+    <!-- the main dashboard part where evey chart is there -->
+    <div>
+        
+    </div>
+    
+    <div id="main_sec">
+      <section class="leftChoose">
+        <% for(let item of reflist){ %>
+          <p class="optionsForCharts"><%= item.typename %></p>
+        <% } %>
+      </section>
+      <section class="rightCharts">
+        <section id="top_charts">
+          <%
+          %>
+          <div id="total_visitors" class="chart_top">
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
+                cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#1e3bb3" stroke-width="2" stroke-dasharray="60.23,100"
+                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="17.75" alignment-baseline="central"
+                  text-anchor="middle" font-size="6">60.23%</text>
+              </g>
+            </svg>
+            <div class="chart_text">
+              Total Visitors
+            </div>
+          </div>
+
+          <div id="visits_per_day" class="chart_top">
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="100" height="100"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431"
+                cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#1e3bb3" stroke-width="2" stroke-dasharray="30.56,100"
+                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="17.75" alignment-baseline="central"
+                  text-anchor="middle" font-size="6">30.56%</text>
+              </g>
+            </svg>
+            <div class="chart_text">
+              Visitors per day
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <section class="revenue">
+      <div>
+        <span>Total Revenue</span>
+        <select id="revenueTimeSelect">
+          <option value="month">This Month</option>
+          <option value="week">This Week</option>
+          <option value="today">Today</option>
+        </select>
+      </div>
+      <div class="revenueMoney">
+        <h3 class="totalRevenue">
+          $5000.00 USD
+          <span class="precentageOfRevenueIncrease"> (-1.37%) </span>
+        </h3>
+      </div>
+    </section>
+
+    <!-- cdn for font -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

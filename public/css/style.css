@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #4a4a8e */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background-color: #f0ede8;
+}
+#nameh1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+#button {
+  border: none;
+  background: none;
+  font-size: 1em;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  color: black;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.4s;
+}
+a{
+
+  text-decoration: none;
+  color: black;
+}
+#button:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #e5d4a9;
+  z-index: -1;
+  transition: all 0.5s;
+}
+#button:hover:before {
+  height: 180px;
+  width: 180px;
+}
+#button:after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #e5d4a9;
+  z-index: -1;
+  transition: all 0.5s;
+}
+#button:hover:after {
+  height: 180px;
+  width: 180px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  gap: 15px;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap:25px;
+}
+
+/* horizontalScrollImage */
+/* .container {
+  width: 100%;
+}
+.innerContainer {
+  width: 100%;
+}
+.innerContainer div {
+  width: 100%;
+}
+.innerContainer div img {
+  width: 100%;
+} */
+.swiper {
+  width: 100%;
+  height: 80%;
+}
+.swiper1 {
+  width: 85%;
+  height: 35%;
+  margin: auto;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+.swiper1 .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.discountSection {
+  width: 80%;
+  height: 200px;
+  border: 2px solid red;
+  margin: 50px auto;
+}
+.swiper-slide button {
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  padding: 15px 30px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  height: 30%;
+}
+.newsletter {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.newsletterLabel {
+  border: 1px solid black;
+  display: flex;
+}
+.newsletterLabel input {
+  height: 100%;
+  width: 80%;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 16px;
+}
+.newsletterLabel span {
+  border-left: 1px solid black;
+  text-align: center;
+  width: 20%;
+  background: #e5d4a9;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.contactIcon {
+  margin-right: 8px;
+}
+.hover:hover {
+  text-decoration: underline;
+}

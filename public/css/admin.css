@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#dashleft{
+  padding: 10px 10px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:40px;
+}
+#dashtxt{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#dashleft button{
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  
+  background: transparent;
+  color: black;
+  transition: all 200ms;
+}
+#dashleft button:hover{
+  color:white;
+  background-color: #1e3bb3;
+  border-color: transparent;
+}
+  .visitors {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 10px 40px 10px 10px;
+  }
+  .fa-caret-down {
+    display: none;
+  }
+  .fa-caret-up {
+    color: #48b9b3;
+  }
+  .visitors p{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .dynamic30DaysVisitors{
+    
+  }
+  .dynamic30DaysVisitors p {
+    color: #1e3bb3;
+  }
+  
+  /* ********************charts section********************* */
+  #main_sec {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    margin-top: 20px;
+  }
+  .leftChoose {
+    border-right: 2px solid #929292;
+    width: 200px;
+    margin-right: 40px;
+  }
+  .leftChoose p {
+    font-weight: 500;
+    padding:10px 0;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .leftChoose p:nth-child(1) {
+    text-decoration: underline;
+    text-decoration-color: #1e3bb3;
+    text-decoration-thickness: 2px;
+  }
+  .leftChoose p:hover {
+    font-size:20px;
+    color: #1e3bb3;
+  }
+  /**** right pane ********/
+/**** top charts **********/
+.rightCharts{
+  flex-grow: 1;
+}
+#top_charts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#top_charts .chart_top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+#top_charts svg{
+  
+}
+#top_charts .chart_text{
+  font-size: 18px;
+  font-weight: 500;
+}
+/***********************************/
+  /* bottom revenue part */
+  .revenue {
+    margin-top: 50px;
+    padding: 0 80px;
+  }
+  #revenueTimeSelect {
+    margin-left: 40px;
+  }
+  .revenueMoney {
+    margin-top: 30px;
+  }
+  .revenue span {
+    font-weight: 500;
+  }
+  .precentageOfRevenueIncrease {
+    color: #f95f53;
+  }
+  .totalRevenue span {
+    font-size: 16px;
+  }
+  

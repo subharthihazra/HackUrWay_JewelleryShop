@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.visitors {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 30px 80px 0;
+}
+.fa-caret-down {
+  display: none;
+}
+.fa-caret-up {
+  color: #48b9b3;
+}
+.dynamic30DaysVisitors p {
+  color: #48b9b3;
+}
+
+/* ********************charts section********************* */
+main {
+  display: flex;
+  padding: 0 80px;
+  margin-top: 40px;
+}
+.leftChoose {
+  border-right: 2px solid #1e3bb3;
+  width: 130px;
+}
+.leftChoose p {
+  font-weight: 500;
+}
+.leftChoose p:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-color: #1e3bb3;
+  text-decoration-thickness: 2px;
+}
+.leftChoose p:hover {
+  transform: scale(1.02);
+  color: #1e3bb3;
+}
+
+/* bottom revenue part */
+.revenue {
+  margin-top: 50px;
+  padding: 0 80px;
+}
+#revenueTimeSelect {
+  margin-left: 40px;
+}
+.revenueMoney {
+  margin-top: 30px;
+}
+.revenue span {
+  font-weight: 500;
+}
+.precentageOfRevenueIncrease {
+  color: #f95f53;
+}
+.totalRevenue span {
+  font-size: 16px;
+}

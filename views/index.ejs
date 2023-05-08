@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- **********************************add the shop name here********************************** -->
+    <title>Shop Name</title>
+    <!-- *********adding the css file********* -->
+    <link rel="stylesheet" href="css/swiperCSS.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- the header section that includes ===>  nav bar-->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>LOGO.</h1>
+          
+        <% if(loggedin==true) { %>
+          <h1 id="nameh1">
+            Hi, <%= name %>!
+          </h1>
+        <% } %>
+        </div>
+        <div class="wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span>WISHLIST</span>
+        </div>
+        <% if(loggedin==true) { %>
+          <form action="/logout?_method=DELETE" method="POST">
+             <button class="" type="submit" id="button" >Logout</button>
+          </form>
+      
+        <% }else{ %>
+          <div class="loginButton">
+            <a href="/login" ><button id="button">Login</button></a>
+          </div>
+        <% } %>
+      </nav>
+    </header>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/horizontalScrollImages/1.jpg" alt="Image" />
+          <button>SHOP NOW</button>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/horizontalScrollImages/2.jpg" alt="Image" />
+          <button>SHOP NOW</button>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/horizontalScrollImages/3.jpg" alt="Image" />
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section>
+      <div class="discountSection">
+        <h1>Discount</h1>
+      </div>
+    </section>
+
+    <div class="swiper swiper1 mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/1.jpeg" alt="Images" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/2.jpeg" alt="Images" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/3.jpeg" alt="Images" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/4.jpeg" alt="Images" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/5.jpeg" alt="Images" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ourSuggestionImages/6.jpeg" alt="Images" />
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev swiper-button"></div>
+    </div>
+
+    <!-- *********font have time for these so leave it********* -->
+    <!-- <section class="necklaces"></section>
+    <section class="earrings"></section>
+    <section class="rings"></section>
+    <section class="watches"></section> -->
+    <hr />
+    <footer class="bottom">
+      <div class="newsletter">
+        Subscribe to our Newsletter
+        <label class="newsletterLabel"
+          ><input type="text" /><span>Join</span></label
+        >
+      </div>
+      <div class="contacts">
+        <div class="hover phone">
+          <i class="fa-solid contactIcon fa-phone-flip"></i> +91-6201665012
+        </div>
+        <div class="hover instagram">
+          <i class="fa-brands contactIcon fa-instagram"></i>@shopName
+        </div>
+        <div class="hover facebook">
+          <i class="fa-brands contactIcon fa-facebook-f"></i>shopName
+        </div>
+        <div class="hover twitter">
+          <i class="fa-brands contactIcon fa-twitter"></i>@shopName
+        </div>
+      </div>
+    </footer>
+    <!-- ****adding the cdn of font awesome*****-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/swiperJS.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
