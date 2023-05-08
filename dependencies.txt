@@ -6,3 +6,5 @@ express-session
 method-override
 passport 
 passport-local
+mysql
+nodemon
