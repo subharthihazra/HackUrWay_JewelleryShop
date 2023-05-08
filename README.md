@@ -20,3 +20,5 @@ npm run devStart
 `
 
 Server would run in port 3000
+
+Screenshot of the project is in 'Project_SS' folder.
